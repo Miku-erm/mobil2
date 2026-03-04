@@ -12,7 +12,11 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.emre23232.mobil",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -20,13 +24,19 @@
         "foregroundImage": "./assets/android-icon-foreground.png",
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
-      }
+      },
+      "package": "com.emre23232.mobil"
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
     "plugins": [
       "expo-font"
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "f067ed7f-5cc6-4c73-8e7d-7834ca030a01"
+      }
+    }
   }
 }
